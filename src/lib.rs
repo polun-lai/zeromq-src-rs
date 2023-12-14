@@ -407,6 +407,7 @@ impl Build {
 
             build.define("HAVE_STRNLEN", "1");
             build.define("ZMQ_HAVE_UIO", "1");
+			build.flag("-std=gnu++11");
 
             if target.contains("android") {
                 has_strlcpy = true;
